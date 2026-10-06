@@ -1,42 +1,75 @@
-# AI Kisan Advisor – Crop Recommendation & Yield Prediction
+# 🌾 AI Kisan Advisor – Crop Recommendation & Yield Prediction
 
-### AI-Driven Decision Support for Sustainable Farming
+### AI-Driven Decision Support for Sustainable and Data-Driven Farming
 
-An AI-powered agricultural decision-support system that uses machine learning to recommend suitable crops and predict expected yield based on soil and climate conditions, while providing explainable recommendations for farmer decision-making.
+AI Kisan Advisor is an AI-powered agricultural decision-support prototype designed to help farmers make more informed crop-planning decisions using soil, climate, crop, market, and financial parameters.
+
+The system combines machine learning concepts, explainable AI, agricultural analytics, and financial modelling to provide crop recommendations, expected yield estimates, economic comparisons, and alternative crop options.
+
+---
+
+## 🎥 Project Demo
+
+The working prototype demonstrates:
+
+- Farmer and farm-condition inputs
+- Soil and climate parameter processing
+- Crop recommendation
+- Recommendation confidence scoring
+- Expected yield prediction
+- Market price and risk assessment
+- Investment and revenue estimation
+- Profit and ROI analysis
+- Alternative crop recommendations
+- Explainable recommendation reasoning
+
+▶️ **[Watch the AI Kisan Advisor Demo](https://youtu.be/uz3Jgbbk11M)**
+
+> The demo presents prototype outputs intended to demonstrate the decision-support workflow. The results should not be treated as professional agricultural advice.
 
 ---
 
 ## 📌 Project Overview
 
-**AI Kisan Advisor** is an Artificial Intelligence in Business project focused on addressing the information and decision-making gap faced by farmers.
+Agricultural decision-making can be affected by fragmented information, delayed advisory services, generic recommendations, inefficient resource utilization, and limited access to data-driven insights.
 
-The proposed system integrates soil, climate, and crop-related parameters with machine learning to provide:
+AI Kisan Advisor addresses this challenge by bringing relevant agricultural and business parameters together into a single decision-support workflow.
 
-- 🌱 Crop recommendations
-- 📈 Expected yield predictions
-- 🔍 Explainable AI-based reasoning
-- 💰 Economic comparison of crop alternatives
-- 📊 Data-driven agricultural decision support
+The proposed system considers factors such as:
 
-The project combines **machine learning, business analysis, sustainability, explainable AI, and financial modelling** to develop an accessible solution for precision agriculture.
+- Soil characteristics
+- Temperature
+- Humidity
+- Rainfall
+- Previous crop
+- Farm area
+- Crop characteristics
+- Market conditions
+- Estimated investment
+- Expected revenue
+- Profitability
+- ROI
+- Risk
+
+The objective is to help users compare potential crop choices from both an agricultural and economic perspective.
 
 ---
 
 ## 🎯 Problem Statement
 
-Agricultural decision-making is often affected by fragmented information, delayed advisories, generic recommendations, and inefficient use of resources.
+Farmers often need to make crop-selection decisions under uncertainty while considering soil conditions, weather, water availability, expected yield, market prices, and profitability.
 
-The project identifies key challenges including:
+The project identifies several challenges:
 
-- Delayed access to actionable agricultural information
-- Generic district-level recommendations
-- Inefficient use of water and fertilizers
+- Delayed access to agricultural information
+- Generic or non-personalized recommendations
+- Inefficient utilization of agricultural resources
 - Yield losses caused by suboptimal crop selection
 - Limited integration of soil and climate information
-- Lack of transparency in some AI-based agricultural solutions
-- Adoption and affordability barriers for smallholder farmers
+- Lack of transparency in some AI-based recommendations
+- Difficulty comparing agricultural alternatives economically
 
-AI Kisan Advisor aims to address these challenges through a proactive, data-driven decision-support system.
+AI Kisan Advisor proposes a data-driven decision-support approach to address these challenges.
 
 ---
 
@@ -44,55 +77,64 @@ AI Kisan Advisor aims to address these challenges through a proactive, data-driv
 
 ### Technical Objectives
 
-- Achieve high-accuracy crop classification
-- Develop a robust yield prediction model
+- Develop a crop recommendation system
+- Develop a yield prediction component
 - Provide explainable AI-based recommendations
-- Reduce recommendation response time
-- Validate model performance using appropriate evaluation metrics
+- Generate confidence scores for recommendations
+- Compare alternative crop choices
+- Evaluate potential economic outcomes
+- Demonstrate an AI-agent-based decision workflow
 
 ### Business Objectives
 
-- Develop an economically viable agricultural AI solution
-- Support agricultural cooperatives and farmers
-- Improve resource efficiency
-- Increase potential agricultural productivity
-- Develop a scalable B2B2C business model
+- Support data-driven agricultural decision-making
+- Improve resource-utilization decisions
+- Compare crop alternatives economically
+- Estimate potential profitability
+- Explore a scalable agricultural technology solution
+- Support sustainable farming decisions
 
 ---
 
-# 🧠 Solution Overview
+## 🧠 Solution Overview
 
-The proposed system follows a three-layer architecture:
+The prototype follows a three-layer decision-support architecture:
 
 ```text
-┌─────────────────────────────────────┐
-│       DATA INGESTION & INPUT        │
-│                                     │
-│  Soil N, P, K, pH                   │
-│  Temperature                        │
-│  Humidity                           │
-│  Rainfall                           │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│        AI PREDICTION ENGINE         │
-│                                     │
-│  Random Forest                      │
-│  Crop Classification               │
-│  Yield Prediction                  │
-│  Feature Importance                │
-│  Explainable AI                    │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│        RECOMMENDATION OUTPUT        │
-│                                     │
-│  Recommended Crop                  │
-│  Confidence Score                  │
-│  Alternative Crops                 │
-│  Expected Yield                    │
-│  "Why This Crop?" Explanation      │
-│  Economic Comparison               │
-└─────────────────────────────────────┘
+┌──────────────────────────────────────────────┐
+│           DATA INPUT & INGESTION             │
+│                                              │
+│  Soil parameters                             │
+│  N, P, K, pH                                 │
+│  Temperature                                 │
+│  Humidity                                    │
+│  Rainfall                                    │
+│  Previous crop                               │
+│  Farm information                            │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│          AI / PREDICTION ENGINE              │
+│                                              │
+│  Crop recommendation                         │
+│  Yield prediction                            │
+│  Confidence assessment                       │
+│  Feature/parameter analysis                  │
+│  Explainable decision support                │
+│  Agent-based reasoning workflow              │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│            RECOMMENDATION OUTPUT             │
+│                                              │
+│  Recommended crop                            │
+│  Confidence score                            │
+│  Expected yield                              │
+│  Market information                          │
+│  Risk assessment                             │
+│  Alternative crops                           │
+│  Economic comparison                         │
+│  Estimated profit & ROI                      │
+└──────────────────────────────────────────────┘
